@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2108A3521345DC9B001188B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2108A3511345DC9B001188B7 /* UIKit.framework */; };
+		2108A3541345DC9B001188B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2108A3531345DC9B001188B7 /* Foundation.framework */; };
+		2108A3561345DC9B001188B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2108A3551345DC9B001188B7 /* CoreGraphics.framework */; };
+		2108A35C1345DC9B001188B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2108A35A1345DC9B001188B7 /* InfoPlist.strings */; };
+		2108A35F1345DC9B001188B7 /* YamlObjCSDKTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2108A35E1345DC9B001188B7 /* YamlObjCSDKTests.h */; };
+		2108A3611345DC9B001188B7 /* YamlObjCSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2108A3601345DC9B001188B7 /* YamlObjCSDKTests.m */; };
+		21B61377134BF6B60070CDD4 /* YamlObjCSDKTestsMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B61376134BF6B60070CDD4 /* YamlObjCSDKTestsMisc.m */; };
+		21E48A151345DF0E000CCF3A /* YamlObjCSDKTestsCybergarage.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A121345DF0E000CCF3A /* YamlObjCSDKTestsCybergarage.m */; };
+		21E48A161345DF0E000CCF3A /* YamlObjCSDKTestsSpec110Example2X.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A131345DF0E000CCF3A /* YamlObjCSDKTestsSpec110Example2X.m */; };
+		21E48A171345DF0E000CCF3A /* YamlObjCSDKTestsWikipedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A141345DF0E000CCF3A /* YamlObjCSDKTestsWikipedia.m */; };
+		21E48A261345DFD1000CCF3A /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A1A1345DFD1000CCF3A /* api.c */; };
+		21E48A271345DFD1000CCF3A /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A1B1345DFD1000CCF3A /* dumper.c */; };
+		21E48A281345DFD1000CCF3A /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A1C1345DFD1000CCF3A /* emitter.c */; };
+		21E48A291345DFD1000CCF3A /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A1D1345DFD1000CCF3A /* loader.c */; };
+		21E48A2D1345DFD1000CCF3A /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A211345DFD1000CCF3A /* parser.c */; };
+		21E48A2E1345DFD1000CCF3A /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A221345DFD1000CCF3A /* reader.c */; };
+		21E48A2F1345DFD1000CCF3A /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A231345DFD1000CCF3A /* scanner.c */; };
+		21E48A301345DFD1000CCF3A /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A241345DFD1000CCF3A /* writer.c */; };
+		21E48A341345E0B3000CCF3A /* CGYAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E48A331345E0B3000CCF3A /* CGYAML.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2108A34E1345DC9B001188B7 /* YamlObjCSDKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YamlObjCSDKTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2108A3511345DC9B001188B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2108A3531345DC9B001188B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2108A3551345DC9B001188B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2108A3591345DC9B001188B7 /* YamlObjCSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YamlObjCSDKTests-Info.plist"; sourceTree = "<group>"; };
+		2108A35B1345DC9B001188B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2108A35D1345DC9B001188B7 /* YamlObjCSDKTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YamlObjCSDKTests-Prefix.pch"; sourceTree = "<group>"; };
+		2108A35E1345DC9B001188B7 /* YamlObjCSDKTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YamlObjCSDKTests.h; sourceTree = "<group>"; };
+		2108A3601345DC9B001188B7 /* YamlObjCSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YamlObjCSDKTests.m; sourceTree = "<group>"; };
+		21B61376134BF6B60070CDD4 /* YamlObjCSDKTestsMisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YamlObjCSDKTestsMisc.m; path = ../../../../YamlObjCSDKTests/YamlObjCSDKTestsMisc.m; sourceTree = "<group>"; };
+		21E48A121345DF0E000CCF3A /* YamlObjCSDKTestsCybergarage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YamlObjCSDKTestsCybergarage.m; path = ../../../../YamlObjCSDKTests/YamlObjCSDKTestsCybergarage.m; sourceTree = "<group>"; };
+		21E48A131345DF0E000CCF3A /* YamlObjCSDKTestsSpec110Example2X.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YamlObjCSDKTestsSpec110Example2X.m; path = ../../../../YamlObjCSDKTests/YamlObjCSDKTestsSpec110Example2X.m; sourceTree = "<group>"; };
+		21E48A141345DF0E000CCF3A /* YamlObjCSDKTestsWikipedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YamlObjCSDKTestsWikipedia.m; path = ../../../../YamlObjCSDKTests/YamlObjCSDKTestsWikipedia.m; sourceTree = "<group>"; };
+		21E48A1A1345DFD1000CCF3A /* api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = api.c; path = ../../../libyaml/src/api.c; sourceTree = "<group>"; };
+		21E48A1B1345DFD1000CCF3A /* dumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dumper.c; path = ../../../libyaml/src/dumper.c; sourceTree = "<group>"; };
+		21E48A1C1345DFD1000CCF3A /* emitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = ../../../libyaml/src/emitter.c; sourceTree = "<group>"; };
+		21E48A1D1345DFD1000CCF3A /* loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loader.c; path = ../../../libyaml/src/loader.c; sourceTree = "<group>"; };
+		21E48A211345DFD1000CCF3A /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parser.c; path = ../../../libyaml/src/parser.c; sourceTree = "<group>"; };
+		21E48A221345DFD1000CCF3A /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reader.c; path = ../../../libyaml/src/reader.c; sourceTree = "<group>"; };
+		21E48A231345DFD1000CCF3A /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = scanner.c; path = ../../../libyaml/src/scanner.c; sourceTree = "<group>"; };
+		21E48A241345DFD1000CCF3A /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writer.c; path = ../../../libyaml/src/writer.c; sourceTree = "<group>"; };
+		21E48A321345E0B3000CCF3A /* CGYAML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGYAML.h; path = ../../../YamlObjCSDK/CGYAML.h; sourceTree = "<group>"; };
+		21E48A331345E0B3000CCF3A /* CGYAML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGYAML.m; path = ../../../YamlObjCSDK/CGYAML.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2108A34A1345DC9B001188B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2108A3521345DC9B001188B7 /* UIKit.framework in Frameworks */,
+				2108A3541345DC9B001188B7 /* Foundation.framework in Frameworks */,
+				2108A3561345DC9B001188B7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2108A3401345DC92001188B7 = {
+			isa = PBXGroup;
+			children = (
+				21E48A311345E095000CCF3A /* YamlObjCSDK */,
+				2108A3571345DC9B001188B7 /* YamlObjCSDKTests */,
+				21E48A191345DFB9000CCF3A /* libyaml */,
+				2108A3501345DC9B001188B7 /* Frameworks */,
+				2108A34F1345DC9B001188B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2108A34F1345DC9B001188B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2108A34E1345DC9B001188B7 /* YamlObjCSDKTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2108A3501345DC9B001188B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2108A3511345DC9B001188B7 /* UIKit.framework */,
+				2108A3531345DC9B001188B7 /* Foundation.framework */,
+				2108A3551345DC9B001188B7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2108A3571345DC9B001188B7 /* YamlObjCSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				2108A35E1345DC9B001188B7 /* YamlObjCSDKTests.h */,
+				2108A3601345DC9B001188B7 /* YamlObjCSDKTests.m */,
+				21E48A121345DF0E000CCF3A /* YamlObjCSDKTestsCybergarage.m */,
+				21E48A131345DF0E000CCF3A /* YamlObjCSDKTestsSpec110Example2X.m */,
+				21E48A141345DF0E000CCF3A /* YamlObjCSDKTestsWikipedia.m */,
+				21B61376134BF6B60070CDD4 /* YamlObjCSDKTestsMisc.m */,
+				2108A3581345DC9B001188B7 /* Supporting Files */,
+			);
+			path = YamlObjCSDKTests;
+			sourceTree = "<group>";
+		};
+		2108A3581345DC9B001188B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2108A3591345DC9B001188B7 /* YamlObjCSDKTests-Info.plist */,
+				2108A35A1345DC9B001188B7 /* InfoPlist.strings */,
+				2108A35D1345DC9B001188B7 /* YamlObjCSDKTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21E48A191345DFB9000CCF3A /* libyaml */ = {
+			isa = PBXGroup;
+			children = (
+				21E48A1A1345DFD1000CCF3A /* api.c */,
+				21E48A1B1345DFD1000CCF3A /* dumper.c */,
+				21E48A1C1345DFD1000CCF3A /* emitter.c */,
+				21E48A1D1345DFD1000CCF3A /* loader.c */,
+				21E48A211345DFD1000CCF3A /* parser.c */,
+				21E48A221345DFD1000CCF3A /* reader.c */,
+				21E48A231345DFD1000CCF3A /* scanner.c */,
+				21E48A241345DFD1000CCF3A /* writer.c */,
+			);
+			name = libyaml;
+			sourceTree = "<group>";
+		};
+		21E48A311345E095000CCF3A /* YamlObjCSDK */ = {
+			isa = PBXGroup;
+			children = (
+				21E48A321345E0B3000CCF3A /* CGYAML.h */,
+				21E48A331345E0B3000CCF3A /* CGYAML.m */,
+			);
+			name = YamlObjCSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2108A34D1345DC9B001188B7 /* YamlObjCSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2108A3621345DC9B001188B7 /* Build configuration list for PBXNativeTarget "YamlObjCSDKTests" */;
+			buildPhases = (
+				2108A3491345DC9B001188B7 /* Sources */,
+				2108A34A1345DC9B001188B7 /* Frameworks */,
+				2108A34B1345DC9B001188B7 /* Resources */,
+				2108A34C1345DC9B001188B7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YamlObjCSDKTests;
+			productName = YamlObjCSDKTests;
+			productReference = 2108A34E1345DC9B001188B7 /* YamlObjCSDKTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2108A3421345DC92001188B7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2108A3451345DC92001188B7 /* Build configuration list for PBXProject "YamlObjCSDKTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2108A3401345DC92001188B7;
+			productRefGroup = 2108A34F1345DC9B001188B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2108A34D1345DC9B001188B7 /* YamlObjCSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2108A34B1345DC9B001188B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2108A35C1345DC9B001188B7 /* InfoPlist.strings in Resources */,
+				2108A35F1345DC9B001188B7 /* YamlObjCSDKTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2108A34C1345DC9B001188B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2108A3491345DC9B001188B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2108A3611345DC9B001188B7 /* YamlObjCSDKTests.m in Sources */,
+				21E48A151345DF0E000CCF3A /* YamlObjCSDKTestsCybergarage.m in Sources */,
+				21E48A161345DF0E000CCF3A /* YamlObjCSDKTestsSpec110Example2X.m in Sources */,
+				21E48A171345DF0E000CCF3A /* YamlObjCSDKTestsWikipedia.m in Sources */,
+				21E48A261345DFD1000CCF3A /* api.c in Sources */,
+				21E48A271345DFD1000CCF3A /* dumper.c in Sources */,
+				21E48A281345DFD1000CCF3A /* emitter.c in Sources */,
+				21E48A291345DFD1000CCF3A /* loader.c in Sources */,
+				21E48A2D1345DFD1000CCF3A /* parser.c in Sources */,
+				21E48A2E1345DFD1000CCF3A /* reader.c in Sources */,
+				21E48A2F1345DFD1000CCF3A /* scanner.c in Sources */,
+				21E48A301345DFD1000CCF3A /* writer.c in Sources */,
+				21E48A341345E0B3000CCF3A /* CGYAML.m in Sources */,
+				21B61377134BF6B60070CDD4 /* YamlObjCSDKTestsMisc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2108A35A1345DC9B001188B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2108A35B1345DC9B001188B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2108A3471345DC92001188B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					../../../YamlObjCSDK,
+					../../../libyaml/include,
+					../../../libyaml,
+				);
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+			};
+			name = Debug;
+		};
+		2108A3481345DC92001188B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					../../../YamlObjCSDK,
+					../../../libyaml/include,
+					../../../libyaml,
+				);
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+			};
+			name = Release;
+		};
+		2108A3631345DC9B001188B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YamlObjCSDKTests/YamlObjCSDKTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "YamlObjCSDKTests/YamlObjCSDKTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2108A3641345DC9B001188B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YamlObjCSDKTests/YamlObjCSDKTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "YamlObjCSDKTests/YamlObjCSDKTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2108A3451345DC92001188B7 /* Build configuration list for PBXProject "YamlObjCSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2108A3471345DC92001188B7 /* Debug */,
+				2108A3481345DC92001188B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2108A3621345DC9B001188B7 /* Build configuration list for PBXNativeTarget "YamlObjCSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2108A3631345DC9B001188B7 /* Debug */,
+				2108A3641345DC9B001188B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2108A3421345DC92001188B7 /* Project object */;
+}

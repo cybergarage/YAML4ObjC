@@ -1,0 +1,9 @@
+# Example 2.4.  Sequence of Mappings (http://yaml.org/spec/1.1/)
+-
+ name: Mark McGwire
+ hr:   65
+ avg:  0.278
+-
+ name: Sammy Sosa
+ hr:   63
+ avg:  0.288

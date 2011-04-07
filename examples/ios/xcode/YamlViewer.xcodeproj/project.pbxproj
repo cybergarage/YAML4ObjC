@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217172871345E88000F8E0C8 /* CGYAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 217172861345E88000F8E0C8 /* CGYAML.m */; };
+		217172961345E89B00F8E0C8 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 2171728A1345E89B00F8E0C8 /* api.c */; };
+		217172971345E89B00F8E0C8 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 2171728B1345E89B00F8E0C8 /* dumper.c */; };
+		217172981345E89B00F8E0C8 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 2171728C1345E89B00F8E0C8 /* emitter.c */; };
+		217172991345E89B00F8E0C8 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 2171728D1345E89B00F8E0C8 /* loader.c */; };
+		2171729D1345E89B00F8E0C8 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 217172911345E89B00F8E0C8 /* parser.c */; };
+		2171729E1345E89B00F8E0C8 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 217172921345E89B00F8E0C8 /* reader.c */; };
+		2171729F1345E89B00F8E0C8 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 217172931345E89B00F8E0C8 /* scanner.c */; };
+		217172A01345E89B00F8E0C8 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 217172941345E89B00F8E0C8 /* writer.c */; };
+		217172AD1345EB7000F8E0C8 /* YamlViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217172AB1345EB7000F8E0C8 /* YamlViewerController.m */; };
+		217172AE1345EB7000F8E0C8 /* YamlViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217172AC1345EB7000F8E0C8 /* YamlViewerController.xib */; };
+		217A4DAD134AE5C400316F92 /* YAML_1.1_Example_2.1.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA3134AE5C400316F92 /* YAML_1.1_Example_2.1.yaml */; };
+		217A4DAE134AE5C400316F92 /* YAML_1.1_Example_2.2.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA4134AE5C400316F92 /* YAML_1.1_Example_2.2.yaml */; };
+		217A4DAF134AE5C400316F92 /* YAML_1.1_Example_2.3.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA5134AE5C400316F92 /* YAML_1.1_Example_2.3.yaml */; };
+		217A4DB0134AE5C400316F92 /* YAML_1.1_Example_2.4.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA6134AE5C400316F92 /* YAML_1.1_Example_2.4.yaml */; };
+		217A4DB1134AE5C400316F92 /* YAML_1.1_Example_2.5.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA7134AE5C400316F92 /* YAML_1.1_Example_2.5.yaml */; };
+		217A4DB2134AE5C400316F92 /* YAML_1.1_Example_2.6.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA8134AE5C400316F92 /* YAML_1.1_Example_2.6.yaml */; };
+		217A4DB3134AE5C400316F92 /* YAML_1.1_Example_2.7.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DA9134AE5C400316F92 /* YAML_1.1_Example_2.7.yaml */; };
+		217A4DB4134AE5C400316F92 /* YAML_1.1_Example_2.8.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DAA134AE5C400316F92 /* YAML_1.1_Example_2.8.yaml */; };
+		217A4DB5134AE5C400316F92 /* YAML_1.1_Example_2.9.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DAB134AE5C400316F92 /* YAML_1.1_Example_2.9.yaml */; };
+		217A4DB6134AE5C400316F92 /* YAML_1.1_Example_2.10.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 217A4DAC134AE5C400316F92 /* YAML_1.1_Example_2.10.yaml */; };
+		21F561E51345E7E800F4D163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F561E41345E7E800F4D163 /* UIKit.framework */; };
+		21F561E71345E7E800F4D163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F561E61345E7E800F4D163 /* Foundation.framework */; };
+		21F561E91345E7E800F4D163 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F561E81345E7E800F4D163 /* CoreGraphics.framework */; };
+		21F561EF1345E7E800F4D163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F561ED1345E7E800F4D163 /* InfoPlist.strings */; };
+		21F561F21345E7E800F4D163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F561F11345E7E800F4D163 /* main.m */; };
+		21F561F51345E7E800F4D163 /* YamlViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F561F41345E7E800F4D163 /* YamlViewerAppDelegate.m */; };
+		21F561F81345E7E800F4D163 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F561F61345E7E800F4D163 /* MainWindow.xib */; };
+		21F561FB1345E7E800F4D163 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F561FA1345E7E800F4D163 /* RootViewController.m */; };
+		21F561FE1345E7E800F4D163 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F561FC1345E7E800F4D163 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		217172851345E88000F8E0C8 /* CGYAML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGYAML.h; sourceTree = "<group>"; };
+		217172861345E88000F8E0C8 /* CGYAML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGYAML.m; sourceTree = "<group>"; };
+		2171728A1345E89B00F8E0C8 /* api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = api.c; path = ../../../libyaml/src/api.c; sourceTree = "<group>"; };
+		2171728B1345E89B00F8E0C8 /* dumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dumper.c; path = ../../../libyaml/src/dumper.c; sourceTree = "<group>"; };
+		2171728C1345E89B00F8E0C8 /* emitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = ../../../libyaml/src/emitter.c; sourceTree = "<group>"; };
+		2171728D1345E89B00F8E0C8 /* loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loader.c; path = ../../../libyaml/src/loader.c; sourceTree = "<group>"; };
+		217172911345E89B00F8E0C8 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parser.c; path = ../../../libyaml/src/parser.c; sourceTree = "<group>"; };
+		217172921345E89B00F8E0C8 /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reader.c; path = ../../../libyaml/src/reader.c; sourceTree = "<group>"; };
+		217172931345E89B00F8E0C8 /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = scanner.c; path = ../../../libyaml/src/scanner.c; sourceTree = "<group>"; };
+		217172941345E89B00F8E0C8 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writer.c; path = ../../../libyaml/src/writer.c; sourceTree = "<group>"; };
+		217172951345E89B00F8E0C8 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = ../../../libyaml/src/yaml_private.h; sourceTree = "<group>"; };
+		217172AA1345EB7000F8E0C8 /* YamlViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YamlViewerController.h; sourceTree = "<group>"; };
+		217172AB1345EB7000F8E0C8 /* YamlViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YamlViewerController.m; sourceTree = "<group>"; };
+		217172AC1345EB7000F8E0C8 /* YamlViewerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YamlViewerController.xib; sourceTree = "<group>"; };
+		217A4DA3134AE5C400316F92 /* YAML_1.1_Example_2.1.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.1.yaml; path = YamlExamples/YAML_1.1_Example_2.1.yaml; sourceTree = "<group>"; };
+		217A4DA4134AE5C400316F92 /* YAML_1.1_Example_2.2.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.2.yaml; path = YamlExamples/YAML_1.1_Example_2.2.yaml; sourceTree = "<group>"; };
+		217A4DA5134AE5C400316F92 /* YAML_1.1_Example_2.3.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.3.yaml; path = YamlExamples/YAML_1.1_Example_2.3.yaml; sourceTree = "<group>"; };
+		217A4DA6134AE5C400316F92 /* YAML_1.1_Example_2.4.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.4.yaml; path = YamlExamples/YAML_1.1_Example_2.4.yaml; sourceTree = "<group>"; };
+		217A4DA7134AE5C400316F92 /* YAML_1.1_Example_2.5.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.5.yaml; path = YamlExamples/YAML_1.1_Example_2.5.yaml; sourceTree = "<group>"; };
+		217A4DA8134AE5C400316F92 /* YAML_1.1_Example_2.6.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.6.yaml; path = YamlExamples/YAML_1.1_Example_2.6.yaml; sourceTree = "<group>"; };
+		217A4DA9134AE5C400316F92 /* YAML_1.1_Example_2.7.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.7.yaml; path = YamlExamples/YAML_1.1_Example_2.7.yaml; sourceTree = "<group>"; };
+		217A4DAA134AE5C400316F92 /* YAML_1.1_Example_2.8.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.8.yaml; path = YamlExamples/YAML_1.1_Example_2.8.yaml; sourceTree = "<group>"; };
+		217A4DAB134AE5C400316F92 /* YAML_1.1_Example_2.9.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.9.yaml; path = YamlExamples/YAML_1.1_Example_2.9.yaml; sourceTree = "<group>"; };
+		217A4DAC134AE5C400316F92 /* YAML_1.1_Example_2.10.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YAML_1.1_Example_2.10.yaml; path = YamlExamples/YAML_1.1_Example_2.10.yaml; sourceTree = "<group>"; };
+		21F561E01345E7E800F4D163 /* YamlViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YamlViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F561E41345E7E800F4D163 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21F561E61345E7E800F4D163 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21F561E81345E7E800F4D163 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21F561EC1345E7E800F4D163 /* YamlViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YamlViewer-Info.plist"; sourceTree = "<group>"; };
+		21F561EE1345E7E800F4D163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21F561F01345E7E800F4D163 /* YamlViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YamlViewer-Prefix.pch"; sourceTree = "<group>"; };
+		21F561F11345E7E800F4D163 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21F561F31345E7E800F4D163 /* YamlViewerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YamlViewerAppDelegate.h; sourceTree = "<group>"; };
+		21F561F41345E7E800F4D163 /* YamlViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YamlViewerAppDelegate.m; sourceTree = "<group>"; };
+		21F561F71345E7E800F4D163 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		21F561F91345E7E800F4D163 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		21F561FA1345E7E800F4D163 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		21F561FD1345E7E800F4D163 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21F561DD1345E7E800F4D163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F561E51345E7E800F4D163 /* UIKit.framework in Frameworks */,
+				21F561E71345E7E800F4D163 /* Foundation.framework in Frameworks */,
+				21F561E91345E7E800F4D163 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217172841345E88000F8E0C8 /* YamlObjCSDK */ = {
+			isa = PBXGroup;
+			children = (
+				217172851345E88000F8E0C8 /* CGYAML.h */,
+				217172861345E88000F8E0C8 /* CGYAML.m */,
+			);
+			name = YamlObjCSDK;
+			path = ../../../YamlObjCSDK;
+			sourceTree = "<group>";
+		};
+		217172891345E88600F8E0C8 /* libyaml */ = {
+			isa = PBXGroup;
+			children = (
+				2171728A1345E89B00F8E0C8 /* api.c */,
+				2171728B1345E89B00F8E0C8 /* dumper.c */,
+				2171728C1345E89B00F8E0C8 /* emitter.c */,
+				2171728D1345E89B00F8E0C8 /* loader.c */,
+				217172911345E89B00F8E0C8 /* parser.c */,
+				217172921345E89B00F8E0C8 /* reader.c */,
+				217172931345E89B00F8E0C8 /* scanner.c */,
+				217172941345E89B00F8E0C8 /* writer.c */,
+				217172951345E89B00F8E0C8 /* yaml_private.h */,
+			);
+			name = libyaml;
+			sourceTree = "<group>";
+		};
+		217172A31345E9BB00F8E0C8 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				217A4DA3134AE5C400316F92 /* YAML_1.1_Example_2.1.yaml */,
+				217A4DA4134AE5C400316F92 /* YAML_1.1_Example_2.2.yaml */,
+				217A4DA5134AE5C400316F92 /* YAML_1.1_Example_2.3.yaml */,
+				217A4DA6134AE5C400316F92 /* YAML_1.1_Example_2.4.yaml */,
+				217A4DA7134AE5C400316F92 /* YAML_1.1_Example_2.5.yaml */,
+				217A4DA8134AE5C400316F92 /* YAML_1.1_Example_2.6.yaml */,
+				217A4DA9134AE5C400316F92 /* YAML_1.1_Example_2.7.yaml */,
+				217A4DAA134AE5C400316F92 /* YAML_1.1_Example_2.8.yaml */,
+				217A4DAB134AE5C400316F92 /* YAML_1.1_Example_2.9.yaml */,
+				217A4DAC134AE5C400316F92 /* YAML_1.1_Example_2.10.yaml */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		21F561D51345E7E800F4D163 = {
+			isa = PBXGroup;
+			children = (
+				217172A31345E9BB00F8E0C8 /* Examples */,
+				217172891345E88600F8E0C8 /* libyaml */,
+				217172841345E88000F8E0C8 /* YamlObjCSDK */,
+				21F561EA1345E7E800F4D163 /* YamlViewer */,
+				21F561E31345E7E800F4D163 /* Frameworks */,
+				21F561E11345E7E800F4D163 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21F561E11345E7E800F4D163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F561E01345E7E800F4D163 /* YamlViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21F561E31345E7E800F4D163 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F561E41345E7E800F4D163 /* UIKit.framework */,
+				21F561E61345E7E800F4D163 /* Foundation.framework */,
+				21F561E81345E7E800F4D163 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21F561EA1345E7E800F4D163 /* YamlViewer */ = {
+			isa = PBXGroup;
+			children = (
+				217172AA1345EB7000F8E0C8 /* YamlViewerController.h */,
+				217172AB1345EB7000F8E0C8 /* YamlViewerController.m */,
+				21F561F31345E7E800F4D163 /* YamlViewerAppDelegate.h */,
+				21F561F41345E7E800F4D163 /* YamlViewerAppDelegate.m */,
+				21F561F61345E7E800F4D163 /* MainWindow.xib */,
+				21F561F91345E7E800F4D163 /* RootViewController.h */,
+				21F561FA1345E7E800F4D163 /* RootViewController.m */,
+				21F561FC1345E7E800F4D163 /* RootViewController.xib */,
+				21F561EB1345E7E800F4D163 /* Supporting Files */,
+				217172AC1345EB7000F8E0C8 /* YamlViewerController.xib */,
+			);
+			path = YamlViewer;
+			sourceTree = "<group>";
+		};
+		21F561EB1345E7E800F4D163 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F561EC1345E7E800F4D163 /* YamlViewer-Info.plist */,
+				21F561ED1345E7E800F4D163 /* InfoPlist.strings */,
+				21F561F01345E7E800F4D163 /* YamlViewer-Prefix.pch */,
+				21F561F11345E7E800F4D163 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21F561DF1345E7E800F4D163 /* YamlViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F562011345E7E800F4D163 /* Build configuration list for PBXNativeTarget "YamlViewer" */;
+			buildPhases = (
+				21F561DC1345E7E800F4D163 /* Sources */,
+				21F561DD1345E7E800F4D163 /* Frameworks */,
+				21F561DE1345E7E800F4D163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YamlViewer;
+			productName = YamlViewer;
+			productReference = 21F561E01345E7E800F4D163 /* YamlViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21F561D71345E7E800F4D163 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 21F561DA1345E7E800F4D163 /* Build configuration list for PBXProject "YamlViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 21F561D51345E7E800F4D163;
+			productRefGroup = 21F561E11345E7E800F4D163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F561DF1345E7E800F4D163 /* YamlViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21F561DE1345E7E800F4D163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F561EF1345E7E800F4D163 /* InfoPlist.strings in Resources */,
+				21F561F81345E7E800F4D163 /* MainWindow.xib in Resources */,
+				21F561FE1345E7E800F4D163 /* RootViewController.xib in Resources */,
+				217172AE1345EB7000F8E0C8 /* YamlViewerController.xib in Resources */,
+				217A4DAD134AE5C400316F92 /* YAML_1.1_Example_2.1.yaml in Resources */,
+				217A4DAE134AE5C400316F92 /* YAML_1.1_Example_2.2.yaml in Resources */,
+				217A4DAF134AE5C400316F92 /* YAML_1.1_Example_2.3.yaml in Resources */,
+				217A4DB0134AE5C400316F92 /* YAML_1.1_Example_2.4.yaml in Resources */,
+				217A4DB1134AE5C400316F92 /* YAML_1.1_Example_2.5.yaml in Resources */,
+				217A4DB2134AE5C400316F92 /* YAML_1.1_Example_2.6.yaml in Resources */,
+				217A4DB3134AE5C400316F92 /* YAML_1.1_Example_2.7.yaml in Resources */,
+				217A4DB4134AE5C400316F92 /* YAML_1.1_Example_2.8.yaml in Resources */,
+				217A4DB5134AE5C400316F92 /* YAML_1.1_Example_2.9.yaml in Resources */,
+				217A4DB6134AE5C400316F92 /* YAML_1.1_Example_2.10.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21F561DC1345E7E800F4D163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F561F21345E7E800F4D163 /* main.m in Sources */,
+				21F561F51345E7E800F4D163 /* YamlViewerAppDelegate.m in Sources */,
+				21F561FB1345E7E800F4D163 /* RootViewController.m in Sources */,
+				217172871345E88000F8E0C8 /* CGYAML.m in Sources */,
+				217172961345E89B00F8E0C8 /* api.c in Sources */,
+				217172971345E89B00F8E0C8 /* dumper.c in Sources */,
+				217172981345E89B00F8E0C8 /* emitter.c in Sources */,
+				217172991345E89B00F8E0C8 /* loader.c in Sources */,
+				2171729D1345E89B00F8E0C8 /* parser.c in Sources */,
+				2171729E1345E89B00F8E0C8 /* reader.c in Sources */,
+				2171729F1345E89B00F8E0C8 /* scanner.c in Sources */,
+				217172A01345E89B00F8E0C8 /* writer.c in Sources */,
+				217172AD1345EB7000F8E0C8 /* YamlViewerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21F561ED1345E7E800F4D163 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F561EE1345E7E800F4D163 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21F561F61345E7E800F4D163 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F561F71345E7E800F4D163 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		21F561FC1345E7E800F4D163 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F561FD1345E7E800F4D163 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21F561FF1345E7E800F4D163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../libyaml,
+					../../../libyaml/include,
+					../../../YamlObjCSDK,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21F562001345E7E800F4D163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../libyaml,
+					../../../libyaml/include,
+					../../../YamlObjCSDK,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = (
+					"-DHAVE_CONFIG_H",
+					"-DNS_BLOCK_ASSERTIONS=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		21F562021345E7E800F4D163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YamlViewer/YamlViewer-Prefix.pch";
+				INFOPLIST_FILE = "YamlViewer/YamlViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21F562031345E7E800F4D163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YamlViewer/YamlViewer-Prefix.pch";
+				INFOPLIST_FILE = "YamlViewer/YamlViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21F561DA1345E7E800F4D163 /* Build configuration list for PBXProject "YamlViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F561FF1345E7E800F4D163 /* Debug */,
+				21F562001345E7E800F4D163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F562011345E7E800F4D163 /* Build configuration list for PBXNativeTarget "YamlViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F562021345E7E800F4D163 /* Debug */,
+				21F562031345E7E800F4D163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21F561D71345E7E800F4D163 /* Project object */;
+}

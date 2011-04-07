@@ -1,0 +1,9 @@
+# Example 2.3.  Mapping Scalars to Sequences (http://yaml.org/spec/1.1/)
+american:
+ - Boston Red Sox
+ - Detroit Tigers
+ - New York Yankees
+national:
+ - New York Mets
+ - Chicago Cubs
+ - Atlanta Braves

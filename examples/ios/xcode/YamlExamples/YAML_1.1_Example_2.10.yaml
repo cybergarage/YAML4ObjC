@@ -1,0 +1,10 @@
+# Example 2.10.  Node for “Sammy Sosa” appears twice in this document (http://yaml.org/spec/1.1/)
+---
+hr:
+ - Mark McGwire
+ # Following node labeled SS
+ - &SS Sammy Sosa
+rbi:
+ - *SS # Subsequent occurrence
+ - Ken Griffey
+

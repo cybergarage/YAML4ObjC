@@ -1,0 +1,9 @@
+# Example 2.9. Single Document with Two Comments (http://yaml.org/spec/1.1/)
+---
+hr: # 1998 hr ranking
+ - Mark McGwire
+ - Sammy Sosa
+rbi:
+# 1998 rbi ranking
+ - Sammy Sosa
+ - Ken Griffey

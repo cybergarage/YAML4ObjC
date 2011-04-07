@@ -1,0 +1,11 @@
+# Example 2.7.  Two Documents in a Stream (http://yaml.org/spec/1.1/)
+# Ranking of 1998 home runs
+---
+- Mark McGwire
+- Sammy Sosa
+- Ken Griffey
+
+# Team ranking
+---
+- Chicago Cubs
+- St Louis Cardinals
