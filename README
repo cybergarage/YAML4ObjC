@@ -4,13 +4,13 @@
 
 ---++ Introduction
 
-YAML for Objective-C is a wrapper class for [[http://pyyaml.org/wiki/LibYAML][LibYAML]] [[#REF01] to query YAML data more easily on iOS platforms, iPhone and iPad.
+YAML for Objective-C is a wrapper class for [[http://pyyaml.org/wiki/LibYAML][LibYAML]] [[#RefDoc01][[1]]] to query YAML data more easily on iOS platforms, iPhone and iPad.
 
 I used LibYAML directly to read configuration files of YAML objects in my project for iOS, but it is hard to use in my projects because I had to write the handler function for each projects like SAX parsers for XML documents :-( 
 
 Thus, I aimed to handle YAML objects more easily only using Objective-C in the project and decided some implementation policies to handle YAML objects more easily for iOS developers as the following.
 
----+++ Using Only Standard Objects Objective-C for Native Data Structure
+---+++ Using Only Standard iOS Objects of Objective-C 
 
 First, I would use only standard data objects of iOS such as NSArray and NSDictionary to hold YAML objects. After parsing YAML data using YAML for Objective-C, the YAML nodes are translated into the following standard data structures in Objective-C on iOS.
 
@@ -20,8 +20,8 @@ First, I would use only standard data objects of iOS such as NSArray and NSDicti
 | Scalar | NSString |
 
 ---+++ YPath
- 
-Next, I would support simple methods to get the node values like XPath. I was looking for the public specification for YAML or JSON version of XPATH, but I could not find it yet :-( Thus, I thought the following simple ABNF specification like [[http://www.w3.org/TR/xpath/][XPath]] to get the node objects or values of YAML document.
+
+Next, I would support simple methods to get the node values like XPath. I was looking for the public specification for YAML or JSON version of XPATH [[#RefDoc02][[2]]][[#RefDoc03][[3]]][[#RefDoc04][[4]]], but I could not find it yet :-( Thus, I thought the following simple ABNF specification like [[http://www.w3.org/TR/xpath/][XPath]] to get the node objects or values in YAML document easily.
 
 <verbatim>
 YPath = [DocumentNo] '/' NodePath
@@ -32,25 +32,29 @@ SequenceNo = '[' [0-9]+ ']'
 MappingKeyName = [a-zA-Z0-9 ]+
 </verbatim>
 
-Please tell me if you know the public specification :-)
-
 ---++ Setup
+
+---+++ Getting SDK Package
+
+1. Get the SDK package from the following site.
+
+| *GitHub* | https://github.com/cybergarage/XPathQuery4ObjC | 
 
 ---+++ Building and using example applications
 
 1. Extract YamlObjCSDK as the following steps:
 <verbatim>
- $ unzip YamlObjCSDK.zip
+$ unzip YamlObjCSDK.zip
 </verbatim>
 
 2. Add LibYAML package into the your SDK directory as the following steps:
 <verbatim>
- $ cd YamlObjCSDK
- $ curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
- $ tar xvfz yaml-0.1.3.tar.gz
- $ mv yaml-0.1.3 libyaml
- $ cd libyaml
- $ ./configure
+$ cd YamlObjCSDK
+$ curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
+$ tar xvfz yaml-0.1.3.tar.gz
+$ mv yaml-0.1.3 libyaml
+$ cd libyaml
+$ ./configure
 </verbatim>
 
 3. Open the project file in examples/ios/xcode/YamlViewer.xcodeproj
@@ -62,21 +66,21 @@ Please tell me if you know the public specification :-)
 1. Create your iOS project
 
 4. Navigate to where you uncompressed the Dropbox SDK and select the DropboxSDK
-   subfolder
+subfolder
 
 2. Add source files of YamlObjCSDK, CGYAML.h and CGYAML.m, to select YamlObjCSDK/YamlObjCSDK directory.
 
 3. Add the following source files of libyaml.
 <verbatim>
- libyaml/config.h
- libyaml/src/api.c
- libyaml/src/api.cdumper.c
- libyaml/src/api.cemitter.c
- libyaml/src/api.cloader.c
- libyaml/src/api.cparser.c
- libyaml/src/api.creader.c
- libyaml/src/api.cscanner.c
- libyaml/src/api.cwriter.c
+libyaml/config.h
+libyaml/src/api.c
+libyaml/src/api.cdumper.c
+libyaml/src/api.cemitter.c
+libyaml/src/api.cloader.c
+libyaml/src/api.cparser.c
+libyaml/src/api.creader.c
+libyaml/src/api.cscanner.c
+libyaml/src/api.cwriter.c
 </verbatim>
 
 3. Add "libyaml" and "libyaml/include" into "Heade Search Paths" of your build setting.
@@ -88,13 +92,13 @@ Please tell me if you know the public specification :-)
 If you want to install LibYAML using the configure script, please use a utility script file, yaml-configure-iosdev, as the following.
 
 <verbatim>
- $ curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
- $ tar xvfz yaml-0.1.3.tar.gz
- $ cp yaml-configure-iosdev yaml-0.1.3
- $ cd yaml-0.1.3
- $ ./yaml-configure-iosdev
- $ make
- $ make install
+$ curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
+$ tar xvfz yaml-0.1.3.tar.gz
+$ cp yaml-configure-iosdev yaml-0.1.3
+$ cd yaml-0.1.3
+$ ./yaml-configure-iosdev
+$ make
+$ make install
 </verbatim>
 
 ---++ Classes
@@ -136,39 +140,39 @@ YAML for Objective-C is composed of only a CGYAML class as the following. I prov
 CGYAML offers two methods to get all values in the specified YAML data. In the first method, you can get the node values by traversing data objects form the root object using YAML::documents or YAML::documentRootNodeAtIndex: as the following. To traverse the all values, please check the implementation of YAML::description in the source code.
 
 <verbatim>
-CGYAML *yaml = [[CGYAML alloc] initWithString:и..];
+CGYAML *yaml = [[CGYAML alloc] initWithString:.....];
 for (id rootNode in [self documents]) {
-   if ([rootNode isYAMLSequenceNode) {
-       for (NSString *seqValue in rootNode) {
-           ии
-       }
-   }
-   else if ([rootNode isYAMLMappingNode) {
-       for (NSString *mapKey in [rootNode allKeys]) {
-           NSString *mapValue = [rootNode objectForKey: mapKey];
-           ии
-       }
-   }
+if ([rootNode isYAMLSequenceNode) {
+for (NSString *seqValue in rootNode) {
+......
+}
+}
+else if ([rootNode isYAMLMappingNode) {
+for (NSString *mapKey in [rootNode allKeys]) {
+NSString *mapValue = [rootNode objectForKey: mapKey];
+......
+}
+}
 }
 </verbatim>
 
 In the next method, you can use YPath to get the node values using YAML::objectForYPath: or YAML::valueForYPath: as the following.
 
 <verbatim>
-CGYAML *yaml = [[CGYAML alloc] initWithString:и..];
+CGYAML *yaml = [[CGYAML alloc] initWithString:.....];
 NSArray *seqNode = [yaml objectForKey:@"/[0]/american"];
 for (NSString *seqValue in seqNode) {
-    ии
+......
 }
 NSString *value = [yaml valueForYPath:@"/[0]/american/[0]"];
-и..
+.....
 </verbatim>
 
 Note: YAML for Objective-C supports only parsing function currently.
 
 ---++ Programming Examples
 
-Using some examples in [[http://yaml.org/spec/1.1/][YAML 1.1 specification]], the following examples show how to get values in YAML data using CGYAML methods.
+Using some examples in [[http://yaml.org/spec/1.1/][YAML 1.1 specification]], the following examples show how to get node values in YAML data using CGYAML methods.
 
 ---+++ Example 2.1 : Sequence of Scalars
 
@@ -265,7 +269,7 @@ NSString *value1a = [yaml valueForYPath:@"/[1]/avg"];
 # Team ranking
 ---
 - Chicago Cubs
-- St Louis Cardinals</verbatim> | <verbatim>CGYAML *yaml = [[CGYAML alloc] initWithString:и..];
+- St Louis Cardinals</verbatim> | <verbatim>CGYAML *yaml = [[CGYAML alloc] initWithString:.....];
 NSArray *seqNode = [yaml documentRootNodeAtIndex:0];    
 NSString *value00 = [seqNode objectAtIndex:0];
 NSString *value01 = [seqNode objectAtIndex:1];
@@ -281,9 +285,11 @@ NSString *value11 = [yaml valueForYPath:@"[1]/[1]"];</verbatim> |
 
 ---++ References
 
-[[#REF01][![1]]][[#REF02][![2]]][[#REF02][![3]]][[#REF02][![4]]]
-
-- #REF01 [[http://pyyaml.org/wiki/LibYAML][LibYAML]]
-- #REF01 [[http://www.ibm.com/developerworks/xml/library/x-matters23.html][XML Matters: YAML improves on XML]]
-- #REF02 [[http://goessner.net/articles/JsonPath/][JSONPath - XPath for JSON]]
-- #REF03 [[http://yaml4r.sourceforge.net/doc/][YAML4R]]
+#RefDoc01
+- [[http://pyyaml.org/wiki/LibYAML][LibYAML]]
+#RefDoc02
+- [[http://www.ibm.com/developerworks/xml/library/x-matters23.html][XML Matters: YAML improves on XML]]
+#RefDoc03
+- [[http://goessner.net/articles/JsonPath/][JSONPath - XPath for JSON]]
+#RefDoc04
+-  [[http://yaml4r.sourceforge.net/doc/][YAML4R]]
