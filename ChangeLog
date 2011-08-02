@@ -1,0 +1,8 @@
+2011-08-02 Satoshi Konno <skonno@cybergarage.org>
+
+	* Added YAML::writeToFile:
+	* Fixed some warnings using XCode 4.0.
+
+2011-04-07 Satoshi Konno <skonno@cybergarage.org>
+
+	* The first public release.
