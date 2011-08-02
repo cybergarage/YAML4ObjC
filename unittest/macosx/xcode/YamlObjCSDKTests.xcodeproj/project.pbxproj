@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21B60FD013E78E0C007549A8 /* YamlObjCSDKTestsWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B60FCF13E78E0C007549A8 /* YamlObjCSDKTestsWriter.m */; };
 		21B7C45C1345E2A4005B7845 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B7C45B1345E2A4005B7845 /* Cocoa.framework */; };
 		21B7C4661345E2A4005B7845 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21B7C4641345E2A4005B7845 /* InfoPlist.strings */; };
 		21B7C4691345E2A4005B7845 /* YamlObjCSDKTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 21B7C4681345E2A4005B7845 /* YamlObjCSDKTests.h */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21B60FCF13E78E0C007549A8 /* YamlObjCSDKTestsWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YamlObjCSDKTestsWriter.m; path = ../../../../YamlObjCSDKTests/YamlObjCSDKTestsWriter.m; sourceTree = "<group>"; };
 		21B7C4581345E2A4005B7845 /* YamlObjCSDKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YamlObjCSDKTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B7C45B1345E2A4005B7845 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		21B7C45E1345E2A4005B7845 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -105,6 +107,7 @@
 		21B7C4611345E2A4005B7845 /* YamlObjCSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				21B60FCF13E78E0C007549A8 /* YamlObjCSDKTestsWriter.m */,
 				21B7C46F1345E2D6005B7845 /* YamlObjCSDKTestsCybergarage.m */,
 				21B7C4701345E2D6005B7845 /* YamlObjCSDKTestsSpec110Example2X.m */,
 				21B7C4711345E2D6005B7845 /* YamlObjCSDKTestsWikipedia.m */,
@@ -240,6 +243,7 @@
 				21B7C48E1345E305005B7845 /* reader.c in Sources */,
 				21B7C48F1345E305005B7845 /* scanner.c in Sources */,
 				21B7C4901345E305005B7845 /* writer.c in Sources */,
+				21B60FD013E78E0C007549A8 /* YamlObjCSDKTestsWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +364,7 @@
 				21B7C46E1345E2A5005B7845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

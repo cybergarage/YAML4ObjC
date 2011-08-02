@@ -1,5 +1,5 @@
 //
-//  YamlObjCSDKTests.m
+//  YamlObjCSDKTestsWriter.m
 //  YamlObjCSDKTests
 //
 //  Created by Satoshi Konno on 11/03/24.
@@ -9,7 +9,7 @@
 #import "YamlObjCSDKTests.h"
 #import "CGYAML.h"
 
-@implementation YamlObjCSDKTests(CyberGarage)
+@implementation YamlObjCSDKTests(Writer)
 
 #define CG_YAMLOBJC_TEST_IREPOEDITOR_CSYNTAX \
 @"name: C\n" \

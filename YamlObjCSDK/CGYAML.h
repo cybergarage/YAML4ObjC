@@ -30,6 +30,8 @@
 - (id)documentRootNodeAtIndex:(NSUInteger)index;
 - (id)objectForYPath:(NSString *)yPath;
 - (NSString *)valueForYPath:(NSString *)yPath;
+
+- (BOOL)writeToFile:(NSString *)path;
 @end
 
 @interface NSObject(CGYAML)

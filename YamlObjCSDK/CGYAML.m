@@ -332,7 +332,7 @@
 	}
 	
 	if ([anObject isYAMLMappingNode]) {
-		for (id key in [anObject allKeys]) {
+		for (id key in [[anObject allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]) {
 			id value = [anObject objectForKey:key];
             if ([value isYAMLScalarNode]) {
                 [buffer appendFormat:@"%@%@: %@\n", [self indentString:indent], key, value];
@@ -351,6 +351,8 @@
 	for (id rootNode in [self documents]) {
         [descrBuffer appendString:@"---\n"];
         [self description:rootNode indent:0 buffer:descrBuffer];
+        if ([[self documents] count] == 1)
+        	break;
         [descrBuffer appendString:@"...\n"];
 	}
     return descrBuffer;
@@ -384,9 +386,16 @@
     return [documentNodes objectAtIndex:0];
 }
 
-//#define IsSequenceComponent(str) NSEqualRanges([str rangeOfString:@"\[([0-9]+)\]" options:NSRegularExpressionSearch], NSMakeRange(0, [str length]))
-#define IsSequenceComponent(str) ([str hasPrefix:@"["] && [str hasSuffix:@"]"])
-#define GetSequenceNumber(str) [[str substringWithRange:NSMakeRange(1,([str length]-2))] integerValue]
+static inline BOOL IsSequenceComponent(NSString *str)
+{
+	//return NSEqualRanges([str rangeOfString:@"\[([0-9]+)\]" options:NSRegularExpressionSearch], NSMakeRange(0, [str length]));
+	return ([str hasPrefix:@"["] && [str hasSuffix:@"]"]);
+}
+
+static inline NSInteger GetSequenceNumber(NSString *str)
+{
+	return [[str substringWithRange:NSMakeRange(1,([str length]-2))] integerValue];
+}
 
 - (id)objectForYPath:(NSString *)ypath
 {
@@ -400,7 +409,7 @@
         [ypathComponets addObject:ypathComponent];
     }
     
-    int documentIndex = 0;
+    NSInteger documentIndex = 0;
     if ([ypath hasPrefix:@"/"] == NO) {
         NSString *documentIndexString = [ypathComponets objectAtIndex:0];
         if (IsSequenceComponent(documentIndexString) == NO)
@@ -414,7 +423,7 @@
         if (IsSequenceComponent(ypathComponent)) {
             if ([ypathObject isYAMLSequenceNode] == NO)
                 return nil;
-            int componentIndex = GetSequenceNumber(ypathComponent);
+            NSInteger componentIndex = GetSequenceNumber(ypathComponent);
             if (([ypathObject count]-1) < componentIndex)
                 return nil;
             ypathObject = [ypathObject objectAtIndex:componentIndex];
@@ -435,6 +444,15 @@
     if ([ypathObj isKindOfClass:[NSString class]] == NO)
         return nil;
     return ypathObj;
+}
+
+- (BOOL)writeToFile:(NSString *)path
+{
+	NSString *descString = [self description];
+	NSData *descData = [descString dataUsingEncoding:NSUTF8StringEncoding];
+    if (descData == nil)
+    	return NO;
+    return [descData writeToFile:path atomically:YES];
 }
 
 @end
@@ -480,7 +498,7 @@
 
 - (BOOL)isEmpty
 {
-	int objectsCount = 0;
+	NSUInteger objectsCount = 0;
 	@synchronized([self objects]) {
 		objectsCount = [[self objects] count];
 	}

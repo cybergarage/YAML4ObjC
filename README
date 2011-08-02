@@ -65,9 +65,6 @@ $ ./configure
 
 1. Create your iOS project
 
-4. Navigate to where you uncompressed the Dropbox SDK and select the DropboxSDK
-subfolder
-
 2. Add source files of YamlObjCSDK, CGYAML.h and CGYAML.m, to select YamlObjCSDK/YamlObjCSDK directory.
 
 3. Add the following source files of libyaml.
