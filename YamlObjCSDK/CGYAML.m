@@ -32,7 +32,7 @@
 @property(retain) NSError *error;
 @property(assign) yaml_parser_t libyamlParser;
 @property(assign) yaml_emitter_t libyamlEmitter;
-@property(assign) CGStack *parserStack;
+@property(retain) CGStack *parserStack;
 @end
 
 @implementation CGYAML
@@ -58,6 +58,10 @@
 	
 	yaml_parser_delete(&libyamlParser);
 	yaml_emitter_delete(&libyamlEmitter);
+    
+    self.yamlDocuments = nil;
+    self.error = nil;
+    self.parserStack = nil;
 }
 
 - (id)initWithString:(NSString *)yamlString;
@@ -273,34 +277,6 @@
         *errorRet = [self error];
     
 	return ([self error] == nil) ? YES : NO;
-}
-
-- (void)writeWithString:(NSString *)yamlString
-{
-	/*
-	FILE *output = fopen("...", "wb");
-	
-	yaml_emitter_set_output_file(&emitter, output);
-	
-	void *ext = ...;
-	int write_handler(void *ext, char *buffer, int size) {
-		return error ? 0 : 1;
-	}
-	
-	yaml_emitter_set_output(&emitter, write_handler, ext);
-	
-	yaml_stream_start_event_initialize(&event, YAML_UTF8_ENCODING);
-	if (!yaml_emitter_emit(&emitter, &event))
-		goto error;
-	
-	yaml_stream_end_event_initialize(&event);
-	if (!yaml_emitter_emit(&emitter, &event))
-		goto error;
-	
-	yaml_emitter_delete(&emitter);
-	
-	return 1;
-	 */
 }
 
 - (NSString *)indentString:(int)indent
