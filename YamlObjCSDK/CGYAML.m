@@ -56,12 +56,12 @@
 {
 	[super dealloc];
 	
-	yaml_parser_delete(&libyamlParser);
-	yaml_emitter_delete(&libyamlEmitter);
-    
     self.yamlDocuments = nil;
     self.error = nil;
     self.parserStack = nil;
+
+	yaml_parser_delete(&libyamlParser);
+	yaml_emitter_delete(&libyamlEmitter);
 }
 
 - (id)initWithString:(NSString *)yamlString;
